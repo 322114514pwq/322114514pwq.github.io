@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ܽ芙兰的小站 || about</title>
+    <title>ܽ芙兰的小站 || 数学</title>
     <meta name="author" content="Flandre">
     <meta name="description" content="blog ">
     <meta name="keywords" content="blog ">
@@ -150,67 +150,78 @@
 
                 <div id="main">
                      
-<link rel="stylesheet" href="/css/post-body.css">
-<div class="article">
-    <div>
-        <h1>about </h1>
-    </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <a-icon type="calendar" theme="filled" />
-            </span>
-            2024/6/25
-        </span>
-
+<div class="categories-tags">
+    
+    <div class="all-s">
         
-
         
-
-        <span class="tags">
-            <span class="icon">
-                <a-icon type="tags" theme="filled" />
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/about" style=color:#ff7d73>
-                    about
-                </a>
-            </span>
-            
+        <span>
+            <a href="/tags/数学/" style='background:linear-gradient(to right, #fbc2eb 0%, #bbd4ff 100%)'>
+                <span class="icon">
+                    <a-icon type="tag" theme="filled" />
+                </span>
+                数学
+            </a>
         </span>
         
+        
+        
+        <span>
+            <a href="/tags/物理/" style=background:#ffa2c4>
+                <span class="icon">
+                    <a-icon type="tag" theme="filled" />
+                </span>
+                物理
+            </a>
+        </span>
+        
+        
     </div>
+    <div id="archives">
+        
+        <a-timeline>
+            <a-timeline-item color="#a5c2f5">
+                <a-card hoverable>
+                    <div class="item-time">2024/6/29</div>
+                    <a href="/2024/06/29/以有尽对无尽——等量代换的应用/">
+                        <h3>以有尽对无尽——等量代换的应用</h3>
+                    </a>
+                    <div class="info">
+                        
 
-    <div class="content" v-pre>
-        <p>#This is an introduction about Flandre.<br>还没想好怎么写。。。</p>
-
+                        
+                        <span class="tags">
+                            <span class="icon">
+                                <a-icon type="tags" theme="filled" />
+                            </span>
+                            
+                            <span class="tag">
+                                
+                                <a href="/tags/数学" style=color:#1bccbc>
+                                    数学
+                                </a>
+                            </span>
+                            
+                            <span class="tag">
+                                
+                                <a href="/tags/物理" style=color:#879cff>
+                                    物理
+                                </a>
+                            </span>
+                            
+                        </span>
+                        
+                    </div>
+                </a-card>
+            </a-timeline-item>
+        </a-timeline>
+        
     </div>
-
-    
-        <div id="comment"><div id="gitalk-container"></div></div>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
-<div id="gitalk-container"></div>
-<script type="text/javascript">
-      var gitalk = new Gitalk({
-        clientID: 'Ov23liJRTZiCZm48w0kG' ,
-        clientSecret: 'f78a2f3db9f51d7834c55106b8c5ec981515c3f8' ,
-        repo: '322114514pwq.github.io' ,
-        owner: '322114514pwq' ,
-        admin: ['322114514pwq'] ,
-        id: location.pathname,
-        labels: ['Gitalk'],
-        perPage: 10,
-        pageDirection: 'last',
-        createIssueManually: true,
-        distractionFreeMode: false,
-        proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
-      })
-      gitalk.render('gitalk-container')
-</script>
-    
+    <script>
+        new Vue({
+            el: '#archives'
+        })
+    </script>
 </div>
                      
 <footer id="footer">
@@ -274,21 +285,6 @@
             }
         }
     })
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script>
-    const gitalk = new Gitalk({
-        clientID: '',
-        clientSecret: '',
-        repo: '',      // The repository of store comments,
-        owner: '',
-        admin: [''],
-        language: '',
-        id: location.pathname,      // Ensure uniqueness and length less than 50
-        distractionFreeMode: true  // Facebook-like distraction free mode
-    })
-    gitalk.render('gitalk-container')
 </script>
 
 </body>
