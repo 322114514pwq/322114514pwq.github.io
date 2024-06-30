@@ -200,14 +200,14 @@
                             
                             <span class="tag">
                                 
-                                <a href="/tags/数学" style=color:#1bccbc>
+                                <a href="/tags/数学" style=color:#ffa2c4>
                                     数学
                                 </a>
                             </span>
                             
                             <span class="tag">
                                 
-                                <a href="/tags/物理" style=color:#879cff>
+                                <a href="/tags/物理" style=color:#ffa2c4>
                                     物理
                                 </a>
                             </span>
@@ -249,7 +249,33 @@
             </div>
         </transition>
     </div>
-
+    <script src="/script/index.umd.js"></script>
+    <script>
+        firework({
+  excludeElements: ["a"],
+  particles: [
+    {
+      shape: "star",
+      move: ["emit","rotate"],
+      easing: "easeOutExpo",
+      colors: [
+        "rgba(255,182,185,.9)",
+        "rgba(250,227,217,.9)",
+        "rgba(255,217,230,.9)",
+        "rgba(230,128,255,.7)",
+      ],
+      number: 20,
+      duration: [1200, 1800],
+      shapeOptions: {
+        radius: [16, 32],
+        alpha: [0.7,0.9],
+      
+        spikes: 5,
+      },
+    },
+  ]
+});
+    </script>
     <script>
     new Vue({
         el: "#layout",
