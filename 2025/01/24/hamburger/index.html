@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芙兰的小站 || hamburger</title>
+    <meta name="author" content="Flandre">
+    <meta name="description" content="blog ">
+    <meta name="keywords" content="blog ">
+    <link rel="icon" href="/pictures/avatar.png">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+    <link rel="stylesheet" href="/script/katex.min.css" >
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">芙兰的小站</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>芙兰的小站</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>hamburger </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2025/1/24
+        </span>
+
+        
+
+        
+
+        <span class="tags">
+            <span class="icon">
+                <a-icon type="tags" theme="filled" />
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/转载" style=color:#ffa2c4>
+                    转载
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+
+    <div class="content" v-pre>
+        <p>■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</p>
+<p>■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</p>
+<p>太精彩了！起点和终点无法决定，游戏半途结束。终末的光芒投向大地，学校里的学生开始去食堂买汉堡。</p>
+<p>我的起点，是学校的汉堡太好吃了。这决定了很多，比如我每天去吃一个。银河系是由几百亿个星星组成的。每天只有到十点才能去买汉堡，不然我就只能食用我的直尺了，这是宇宙中多么一个莫大的不幸。■■■■■■■■■■■■■■■■■■■■■但是想写什么，为什么什么都写不下来啊。</p>
+<p>无论怎么选都会选中错误的，怎么挣扎都改变不了些什么呢，怎么搞都必定会失败吧，终末之时已至。不如去多吃几个汉堡。</p>
+<p>享受当下，我能吃几个，我就吃几个。还有几天就再也买不到学校的汉堡了，学校食堂马上就没有汉堡了，这点也是假的吧，同我那可笑的荒诞的错觉一样，都是不规则的吧。</p>
+<p>三角形的太阳在天上放着剧毒的光，这是真的吗，从来我一点都不累的，竟然有些疲惫了，太阳要掉下去了，必定会失败吧，终末之时已至，吃汉堡吧。</p>
+<p>学校的柜子里还剩下最后几个汉堡，都是我的了！每一个都要尽情享用，在太阳落山之前，终末之时已至，不如多吃几个汉堡吧。</p>
+<p>我感受着汉堡里的调料在我舌尖跳舞，我不禁想着，在这广大的银河中，一定也有人在跳舞吧。在被落下的太阳烧死前，金光填满了我的世界，无所谓了，无所谓了，来生还会有汉堡的。下定决心的起点，错觉与虚幻交织的终点，还会再一次出现的吧。学校食堂的汉堡，马上就会补货，我把我的胃发射到天上，残缺的身体第一次张开了对太阳的怀抱。</p>
+<p>■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</p>
+
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"enable":true,"clientID":"Ov23liJRTZiCZm48w0kG","clientSecret":"f78a2f3db9f51d7834c55106b8c5ec981515c3f8","repo":"322114514pwq.github.io","owner":"322114514pwq","admin":["322114514pwq"],"distractionFreeMode":false,"perPage":10,"id":"location.pathname"};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script>
+    </div>
+
+    
+        <div id="comment"><div id="gitalk-container"></div></div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liJRTZiCZm48w0kG' ,
+        clientSecret: 'f78a2f3db9f51d7834c55106b8c5ec981515c3f8' ,
+        repo: '322114514pwq.github.io' ,
+        owner: '322114514pwq' ,
+        admin: ['322114514pwq'] ,
+        id: location.pathname,
+        labels: ['Gitalk'],
+        perPage: 10,
+        pageDirection: 'last',
+        createIssueManually: true,
+        distractionFreeMode: false,
+        proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+      })
+      gitalk.render('gitalk-container')
+</script>
+    
+</div>
+                    <!--部分代码已经我改造，与原particle不相同-->
+ 
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2024 - 2025 芙兰的小站
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Flandre
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script><!--jQuery 百度CDN-->
+<script type="text/javascript">//樱花
+    var system ={}; 
+    var p = navigator.platform; 
+    system.win = p.indexOf("Win") == 0; 
+    system.mac = p.indexOf("Mac") == 0; 
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+    if(system.win||system.mac||system.xll){//如果是电脑
+    $.getScript("/script/yinghua.js");
+    }else{ 
+    console.log("手机不支持樱花特效.")
+    }
+    //https://cangshui.net/2372.html
+    </script>
+                </div>
+            </div>
+        </transition>
+    </div>
+    <script src="/script/index.umd.js"></script>
+    <script>
+        firework({
+  excludeElements: ["a"],
+  particles: [
+    {
+      shape: "star",
+      move: ["emit","rotate"],
+      easing: "easeOutExpo",
+      colors: [
+        "rgba(255,182,185,.9)",
+        "rgba(250,227,217,.9)",
+        "rgba(255,217,230,.9)",
+        "rgba(230,128,255,.7)",
+      ],
+      number: 20,
+      duration: [1200, 1800],
+      shapeOptions: {
+        radius: [16, 32],
+        alpha: [0.7,0.9],
+      
+        spikes: 5,
+      },
+    },
+  ]
+});
+    </script>
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: 'Ov23liJRTZiCZm48w0kG' ,
+        clientSecret: 'f78a2f3db9f51d7834c55106b8c5ec981515c3f8' ,
+        repo: '322114514pwq.github.io' ,
+        owner: '322114514pwq' ,
+        admin: ['322114514pwq'] ,
+        id: location.pathname,
+        labels: ['Gitalk'],
+        perPage: 10,
+        pageDirection: 'last',
+        createIssueManually: true,
+        distractionFreeMode: false,
+        proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    })
+    gitalk.render('gitalk-container')
+</script>
+
+</body>
+
+</html>

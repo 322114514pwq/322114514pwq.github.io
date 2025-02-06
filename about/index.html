@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>芙兰的小站 || about</title>
+    <meta name="author" content="Flandre">
+    <meta name="description" content="blog ">
+    <meta name="keywords" content="blog ">
+    <link rel="icon" href="/pictures/avatar.png">
+    <link rel="stylesheet" href="/css/antd.min.css">
+    
+    <link rel="stylesheet" href="/css/maiden-theme.css">
+    
+    <script src="/js/vue.js"></script>
+    <script src="/js/antd.min.js"></script>
+    <link rel="stylesheet" href="/script/katex.min.css" >
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+
+    <div id="loading"
+        style="height: 100vh; width: 100%; position: fixed;display: flex;z-index: 200; justify-content: space-between;">
+        <div id="loadleft" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div id="loadright" style="width: 50%;background-color: #ffffff;transition: width 0.6s ease-out;"></div>
+        <div
+            style="position: fixed; height: 100vh; width: 100%;display: flex;justify-content: center;align-items: center;">
+            <div id="loadcontent"
+                style="width:400px;height:400px;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px#a3ddfb; text-align:center;opacity:1;transition:opacity 0.3s ease-out;">
+                <div>
+                    <h2>LOADING...</h2>
+                    <p>加载过慢请开启缓存(浏览器默认开启)</p>
+                    <div>
+                        <img src="/dancingkitty.gif" alt="loading">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layout">
+        <transition name="into">
+            <div v-show="show_page" style="display: none;">
+                <div id="menu_show">
+                     
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">芙兰的小站</span>
+        </a>
+        
+        <a href="/">
+            <span>
+                <a-icon type="home" theme="filled" />
+            </span>
+            <span>home</span>
+        </a>
+        
+        <a href="/about">
+            <span>
+                <a-icon type="idcard" theme="filled" />
+            </span>
+            <span>about</span>
+        </a>
+        
+        <a href="/archives">
+            <span>
+                <a-icon type="folder" theme="filled" />
+            </span>
+            <span>archives</span>
+        </a>
+        
+        <a href="/categories">
+            <span>
+                <a-icon type="book" theme="filled" />
+            </span>
+            <span>categories</span>
+        </a>
+        
+        <a href="/tags">
+            <span>
+                <a-icon type="tags" theme="filled" />
+            </span>
+            <span>tags</span>
+        </a>
+        
+    </div>
+
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div :class="'title'" @click="menu_show=!menu_show">
+            <span style="margin-right: 10px;">
+                <a-icon type="appstore" theme="filled" />
+            </span>
+            <span>芙兰的小站</span>
+        </div>
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="home" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="idcard" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="folder" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="book" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width:20px; max-width:50px; width: 10%">
+                        <a-icon type="tags" theme="filled" />
+                    </div>
+                    <div style="min-width:100px;max-width: 150%;width: 20%;">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        <div class="curtain" v-show="menu_show"></div>
+    </div>
+
+</nav>
+                </div>
+
+                <div id="main">
+                     
+<link rel="stylesheet" href="/css/post-body.css">
+<div class="article">
+    <div>
+        <h1>about </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <a-icon type="calendar" theme="filled" />
+            </span>
+            2024/6/25
+        </span>
+
+        
+
+        
+    </div>
+
+    <div class="content" v-pre>
+        <h3 id="this-is-a-introduction-about-flandre"><a class="markdownIt-Anchor" href="#this-is-a-introduction-about-flandre"></a> This is a introduction about Flandre.🤣</h3>
+<p>苦逼学生党，会点数理化、编程，刚刚中考完，好累。。</p>
+<p><a target="_blank" rel="noopener" href="https://space.bilibili.com/702970767">Bilibili</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/322114514pwq">Github</a></p>
+<p><a target="_blank" rel="noopener" href="https://pixiv.net/users/94370005">Pixiv</a></p>
+<p>QQ:3220126591</p>
+<p>More…</p>
+<p>为什么要整这个？</p>
+<p>说实话是因为闲（</p>
+<p>不过迫于学业，竞赛，etc，</p>
+<p>以后估计就不会这么闲了。</p>
+<p>所以这个可爱的网络一隅不久可能也会在信息洪流中渐渐被遗忘掉。</p>
+<p>一路走来，感慨万千。</p>
+<p>三年级起，我开始因爱好学习scratch编程。（前两年在学office三件套）</p>
+<p>一开始在学校学。</p>
+<p>令我印象最深的就是一次课，老师让解一个鸡兔同笼问题。</p>
+<p>整个班只有我一个人在下课前压着线完成的。使用的方法是用二阶循环分别将鸡和兔的数量从1枚举到100，然后输出满足头脚数量的答案。（十分简陋）</p>
+<p>当时老师把我一人叫过去，一面肯定了我的枚举方法，一面又小声告诉我如何优化。</p>
+<p>接着自己开始学scratch，开始混各大编程社区，包括<a target="_blank" rel="noopener" href="https://scratch-cn.cn/">scratch官中社区</a>，<a target="_blank" rel="noopener" href="https://aerfaying.com/">A营</a>，<a target="_blank" rel="noopener" href="https://code.xueersi.com/">学而思社区</a>等等。</p>
+<p>然后又学了点c＋＋，python，就是没对计算机竞赛感兴趣有点可惜。</p>
+<p>18-19年开始接触b站，一直用的游客登陆，账号是在21年注册的。</p>
+<p>20年开始接触音游，当时phi还处于古早离线版本，线下同好稀少到找不到一个，21年退坑，<s>22年又被同学拉回坑</s>。</p>
+<p>21年暑假喜欢上数学，在b站上看一数的初中数学视频。</p>
+<p>还是21年接触萌娘百科，<s>通过一种较为正经的方式</s>x启蒙，顺便整了点wiki编辑。</p>
+<p>22年初开始接触车万，开始传教，同时喜欢边听车万曲边熬夜写作业。</p>
+<p>23年开始玩galgame，这个话题就不说了。现在的网络发展水平使资源搜索既越来越便利又越来越麻烦。</p>
+<p><s>24年在群里扮猫娘。</s></p>
+<p>中间零零碎碎也学过或用过一些东西，例如（大概按时间顺序，很杂）视频剪辑，javascript，live2d（网课时期曾经用facerig整过虚拟人物，险些被骂），mc指令，数字电路（研究红石时学的），unity，LuaSTG（弹幕开发引擎），AE，flash动画，shader，manim（数学动画生成引擎）等等，大多是自己找视频或文档教程学着做，但大多只搞出点皮毛，最后石沉大海。</p>
+<p>就写到这里，以后有要补充的再说吧。</p>
+<p>或许这就是咱最后一次更新了。</p>
+<p>最后感谢你能看到这里。</p>
+<p>2024-12-14</p>
+<p>喵。</p>
+
+<div id="gitalk-container"></div>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+		<script>
+		var gitalkConfig = {"enable":true,"clientID":"Ov23liJRTZiCZm48w0kG","clientSecret":"f78a2f3db9f51d7834c55106b8c5ec981515c3f8","repo":"322114514pwq.github.io","owner":"322114514pwq","admin":["322114514pwq"],"distractionFreeMode":false,"perPage":10,"id":"location.pathname"};
+	    gitalkConfig.id = md5(location.pathname);
+		var gitalk = new Gitalk(gitalkConfig);
+	    gitalk.render("gitalk-container");
+	    </script>
+    </div>
+
+    
+        <div id="comment"><div id="gitalk-container"></div></div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+      var gitalk = new Gitalk({
+        clientID: 'Ov23liJRTZiCZm48w0kG' ,
+        clientSecret: 'f78a2f3db9f51d7834c55106b8c5ec981515c3f8' ,
+        repo: '322114514pwq.github.io' ,
+        owner: '322114514pwq' ,
+        admin: ['322114514pwq'] ,
+        id: location.pathname,
+        labels: ['Gitalk'],
+        perPage: 10,
+        pageDirection: 'last',
+        createIssueManually: true,
+        distractionFreeMode: false,
+        proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+      })
+      gitalk.render('gitalk-container')
+</script>
+    
+</div>
+                    <!--部分代码已经我改造，与原particle不相同-->
+ 
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 2024 - 2025 芙兰的小站
+            <span class="footer-icon">
+                <a-icon type="flag" theme="filled" /></span>
+            @Flandre
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/korilin/hexo-theme-particle">Particle Theme</a></div>
+        
+    </div>
+
+</footer>
+
+<script src="/js/highlight.min.js"></script>
+<script src="/js/particle.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script><!--jQuery 百度CDN-->
+<script type="text/javascript">//樱花
+    var system ={}; 
+    var p = navigator.platform; 
+    system.win = p.indexOf("Win") == 0; 
+    system.mac = p.indexOf("Mac") == 0; 
+    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0); 
+    if(system.win||system.mac||system.xll){//如果是电脑
+    $.getScript("/script/yinghua.js");
+    }else{ 
+    console.log("手机不支持樱花特效.")
+    }
+    //https://cangshui.net/2372.html
+    </script>
+                </div>
+            </div>
+        </transition>
+    </div>
+    <script src="/script/index.umd.js"></script>
+    <script>
+        firework({
+  excludeElements: ["a"],
+  particles: [
+    {
+      shape: "star",
+      move: ["emit","rotate"],
+      easing: "easeOutExpo",
+      colors: [
+        "rgba(255,182,185,.9)",
+        "rgba(250,227,217,.9)",
+        "rgba(255,217,230,.9)",
+        "rgba(230,128,255,.7)",
+      ],
+      number: 20,
+      duration: [1200, 1800],
+      shapeOptions: {
+        radius: [16, 32],
+        alpha: [0.7,0.9],
+      
+        spikes: 5,
+      },
+    },
+  ]
+});
+    </script>
+    <script>
+    new Vue({
+        el: "#layout",
+        data: {
+            show_page: false,
+            onload_menu: false,
+            menu_show: false,
+            card_top: 100
+        },
+        created: function () {
+            var that = this
+            window.onload = function () {
+                that.show_page = true
+                document.getElementById("loadcontent").style.opacity = 0
+                setTimeout(function () {
+                    document.getElementById("loadleft").style.width = 0
+                    document.getElementById("loadright").style.width = 0
+                }, 300)
+                setTimeout(function () {
+                    document.getElementById("loading").style = "display:none"
+                }, 600)
+            }
+        },
+        mounted: function () {
+            var that = this
+            window.addEventListener('scroll', function (e) {
+                that.menu_show = false
+            })
+        },
+        methods: {
+            home_click: function () {
+                window.scrollTo({
+                    top: window.innerHeight - 80,
+                    behavior: "smooth",
+                });
+            }
+        }
+    })
+</script>
+
+</body>
+
+</html>
